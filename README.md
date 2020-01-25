@@ -27,7 +27,7 @@ We don’t have a final license yet but for now think of it as CC-SA-BY. You’l
 
 What are the datasets openly accessible?
 
-LiDAR data from the DREAM/Phil LiDAR Program (Laz, DSM, DTM and Orthophotographs) within 20km from the Taal crater. <Due to data cleaning and vetting purpose we’ll be staggering the release of the data starting from volcano island, 14km, 17km, then 20km radius.>
+LiDAR data from the DREAM/Phil LiDAR Program (Laz, DSM, DTM and Orthophotographs) within 20km from the Taal crater. <Due to data cleaning and vetting purpose we’ll be staggering the release of the data starting starting from DTM and DSMs first then laz files from volcano island, 14km, 17km, then 20km radius.>
 
 Will LiDAR data for other areas be openly accessible as well?
 
