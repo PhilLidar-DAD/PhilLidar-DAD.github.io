@@ -88,7 +88,7 @@
 
 	info.update = function (props) {
 
-		this._div.innerHTML = '<p class="w3-center"><img src="./static/UP.png" class="w3-center" style="width:40px" style="max-height:40px"><img src="./static/TCAGP.png" class="w3-center" style="width:50px" style="max-height:40px"><img src="./static/DREAM.png" class="w3-center" style="width:40px" style="max-height:40px"></p><h4>Taal Open LiDAR Data</h4><p>LiDAR data (Laz - point clouds, DTM & DSM - elevation models, and Orthophotographs) from the DREAM/Phil-LiDAR Program for the areas affected by the Taal eruption are openly accessible here.</p><b><a href="https://docs.google.com/document/d/1D0rD_duRaKuFbw8ASLp8DuLRu3RynYKUXTAqQG77JnQ/edit?usp=sharing" target="_blank">FAQ</a><br /><br />'
+		this._div.innerHTML = '<p class="w3-center"><img src="./static/UP.png" class="w3-center" style="width:40px" style="max-height:40px"><img src="./static/TCAGP.png" class="w3-center" style="width:50px" style="max-height:40px"><img src="./static/DREAM.png" class="w3-center" style="width:40px" style="max-height:40px"></p><h4>Taal Open LiDAR Data</h4><p>LiDAR data (Laz - point clouds, DTM & DSM - elevation models, and Orthophotographs) from the DREAM/Phil-LiDAR Program for the areas affected by the Taal eruption are openly accessible here.</p><b><a href="https://potree.entwine.io/data/view.html?t=%5B283499.5,1550170,119.99999999999878%5D&p=%5B282647.27684079757,1550437.595648701,273.5677002626534%5D&r=%22https://phil-lidar-taal-entwine-s3.s3.us-east-2.amazonaws.com/Taal_Volcano_Island/%22&m=8&ph=1&ir=%5B0,43%5D&era=%5B-8.76,380%5D&ig=0.93&ic=-0.14&cf=%5B0,1,7,8,12%5D" target="_blank">Taal Island 3d Viz</a><br /><br /><b><a href="https://docs.google.com/document/d/1D0rD_duRaKuFbw8ASLp8DuLRu3RynYKUXTAqQG77JnQ/edit?usp=sharing" target="_blank">FAQ</a><br /><br />'
 
 		this._div.innerHTML += (Object.keys(selectedFeats).length != 0 ? '<h4>LiDAR Data Available</h4>' : '<h4>Click on a tile</h4>')
 
@@ -97,12 +97,15 @@
 		
 			this._div.innerHTML +=  '</b><br />' + (props ?
 			'<b>' + 'DREAM gridref: ' + props.GRIDREF 
-			// + '</b><br />' + 'LAZ: ' + (props.LAZ ? '<a href="https://phil-lidar-taal-s3.s3.us-east-2.amazonaws.com/Taal_LAZ/'+ props.GRIDREF +'_LAZ_PL1.laz " target="_blank">download</a> | <a href="https://potree.entwine.io/data/view.html?r=%22https://phil-lidar-taal-s3.s3.us-east-2.amazonaws.com/data/'+ props.GRIDREF +'_LAZ_PL1..etp%22 " target="_blank">view</a>' : 'none') 
+			+ '</b><br />' + 'LAZ: ' + (props.LAZ ? '<a href="https://phil-lidar-taal-s3.s3.us-east-2.amazonaws.com/Taal_LAZ/'+ props.GRIDREF +'_LAZ_PL1.laz " target="_blank">download</a>' : 'none')
 			+ '</b><br />' + 'DTM: ' + (props.DTM ? '<a href="https://phil-lidar-taal-s3.s3.us-east-2.amazonaws.com/Taal_DTM/'+ props.GRIDREF +'_DTM.tif " target="_blank">download</a>' : 'none')
 			+ '</b><br />' + 'DSM: ' + (props.DSM ? '<a href="https://phil-lidar-taal-s3.s3.us-east-2.amazonaws.com/Taal_DSM/'+ props.GRIDREF +'_DSM.tif " target="_blank">download</a>' : 'none')
-			+ '</b><br />' + 'ORTHO: ' + (props.ORTHO ? '<a href="https://phil-lidar-taal-s3.s3.us-east-2.amazonaws.com/Taal_ORTHO/'+ props.GRIDREF +'_ORTHO.tif " target="_blank">download</a>' : 'none')
+			+ '</b><br />' + 'ORTHO: ' + (props.ORTHO ? '<a href="https://phil-lidar-taal-s3.s3.us-east-2.amazonaws.com/Taal_ORTHO/'+ props.GRIDREF +'_ORTHO_PL1.tif " target="_blank">download</a>' : 'none')
 			: 'Click a tile') + '</b><br /><a href="#" onclick=removeFeature("'+props.GRIDREF+'")>remove</a>' +  '</b><br />';
 		}
+
+		// ' | <a href="https://potree.entwine.io/data/view.html?r=%22https://phil-lidar-taal-s3.s3.us-east-2.amazonaws.com/data/'+ props.GRIDREF +'_LAZ_PL1.etp%22 " target="_blank">view</a>'  
+			
 
 		if (selectedFeats == {}){
 			this._div.innerHTML += '<p>click a tile</p>'
