@@ -23,57 +23,57 @@ For further inquiries, you may contact the data archiving and distribution team 
 
 ## FAQ
 
-* What are LiDAR? Orthophotos? DSM? DTM?
+* **What are LiDAR? Orthophotos? DSM? DTM?**
 
 LiDAR stands for Light Detection and Ranging. These datasets are derived from data acquired through the use of airborne LiDAR systems mounted on an airplane. The output of the LiDAR sensor is a 3D point cloud containing points that were scanned. Here is a link to the DREAM program sample product description for more information: https://dream.upd.edu.ph/products/product-samples/
 
-* Is there a catch?
+* **Is there a catch?**
 
 Yes, there is. You’ll have to cite the UP TCAGP and PHIL-LiDAR Program when you use the data, that’s it. 
 
-* What’s the data license?
+* **What’s the data license?**
 
 CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). You’ll have to cite the program (see above) when you use the data. Its share a-like so products you derive or generate from the LiDAR datasets should be open too! (Meaning it should be free, no you can’t sell the data, but it does not mean you can’t charge for your data processing services if you want to. Hello GIS/CLUP consultants!)
 
-* What are the datasets openly accessible?
+* **What are the datasets openly accessible?**
 
 LiDAR data from the DREAM/Phil-LiDAR Program (Laz, DSM, DTM and Orthophotographs) within 20km from the Taal crater. 
 
-* Will LiDAR data for other areas be openly accessible as well?
+* **Will LiDAR data for other areas be openly accessible as well?**
 
 There are no plans yet, but you never know. If you need data for other areas and you’re working on a government, research, or academic project we freely (no payment) provide the data using: https://lipad.dream.upd.edu.ph/ Do keep in mind that the program has ended in 2017, and former researchers are maintaining this as volunteer work, so try to be patient with your requests. 
  
-* Can we download the data by bulk?
+* **Can we download the data by bulk?**
 
 If you’re lazy and would like to download the whole dataset as a whole please log on to LiPAD as well. Perhaps when our volunteers have more time to develop the site. But for now, pag may tiyaga may nilaga!
 
-* How was the data created/processed?
+* **How was the data created/processed?**
 
 Long story! If you have the time to read here are our data acquisition and processing reports found here https://dream.upd.edu.ph/up-phil-lidar-1-program-technical-reports/.  Short answer, these we acquired, processed, and validated by Phil Lidar 1 program, specifically researchers from the University of the Philippines and Mapua University.
 
-* We want new data!
+* **We want new data!**
 
 A quick Google search will show a number of Philippine commercial enterprises you can engage for LiDAR data acquisition, there are a handful of options around and we were not paid to plug anyone else but ourselves. If your area is greater than 100sq km, our lidar systems can be commissioned through the DREAM Commercial Services under the UP TCAGP. You may contact us through bdo@dream.upd.edu.ph .
 
-* When were these taken?
+* **When were these taken?**
 
 Between 2014 to 2017.
 
-* Where is the metadata?
+* **Where is the metadata?**
 
 We know, we’re working on it. We’ll upload it as soon as we can should be downloadable in the same interface at a later time. But if you can’t wait, the pertinent details are in the technical reports mentioned above.
 
-* There seems to be some discrepancies in the data.
+* **There seems to be some discrepancies in the data.**
 
 Like with any product, these were generated with a specific purpose in mind, the original being for flood mapping. Hence our product development pipeline prioritized QA/QC for that purpose. This means some checks might have been missed, in case you see any please let us know. We’ll look into it. 
 
-* What can be done with these datasets?
+* **What can be done with these datasets?**
 
 The sky's the limit. Digital elevation models can be used for terrain modelling.Classified point clouds (Laz) can be reprocessed to generate your own DEMs. Together they can be used for various applications, not just for DRR. Phil-LiDAR 2 used these data to generate resource assessments and maps. You can get these datasets from:
 
-**Agriculture: ParMap - parmap.dream.upd.edu.ph 
-**Forestry: Frexls - frexls.dream.upd.edu.ph
-**Coastal: Coastmap - coastmap.dream.upd.edu.ph
+** Agriculture: ParMap - parmap.dream.upd.edu.ph 
+** Forestry: Frexls - frexls.dream.upd.edu.ph
+** Coastal: Coastmap - coastmap.dream.upd.edu.ph
 
 --updated 31012020--
 
